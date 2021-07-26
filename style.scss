@@ -1,0 +1,24 @@
+/*==================/
+  LIBRARY
+/==================*/
+@import "lib/reset";
+
+@import "lib/breakpoint";
+@import "lib/spacement";
+@import "lib/type";
+@import "lib/containers";
+@import "lib/accessibility";
+
+/*==================/
+  SETTINGS
+/==================*/
+@import "settings/colors";
+
+
+
+.div1, .div2{
+  height: 100px;
+  width: 100px;
+  background-color: red;
+  margin-bottom: space(1);
+}

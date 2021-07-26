@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{font-family: 'Poppins', 'sans-serif';}
+
+:root{
+  @include media('<=phone'){
+    --font-size: 12px;
+  }
+  @include media('>phone','<=tablet'){
+    --font-size: 15px;
+  }
+  @include media('>tablet','<=desktop'){
+    --font-size: 15px;
+  }
+  @include media('>desktop'){
+    --font-size: 15px;
+  }
+}
+
+html{
+  font-size: var(--font-size);
+}
+
+@for $i from 1 through 4{
+  h#{$i}{
+    font-weight: bold;
+    font-size: calc(4rem - (#{$i - 1} * .9rem) + 10px);
+
+    &+.caption{
+      margin-top: -.5em;
+      color: rgb(0,0,0,.6);
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+h1, h2, h3, h4, p{
+  line-height: 1.5em;
+}
+
+.type-wrapper{
+  margin-bottom: 1rem;
+}
