@@ -21,22 +21,20 @@ html{
 }
 
 @for $i from 1 through 4{
+
   h#{$i}{
     font-weight: bold;
-    font-size: calc(4rem - (#{$i - 1} * .9rem) + 10px);
+    font-size: calc(3rem - (#{$i - 1} * .7rem) + 10px);
 
     &+.caption{
-      margin-top: -.5em;
+      font-size: calc(1.8rem - (#{$i - 1} * .2rem));
+      margin-top: calc(-1em + 10px);
       color: rgb(0,0,0,.6);
-      margin-bottom: 1rem;
+      margin-bottom: .3em;
     }
   }
 }
 
 h1, h2, h3, h4, p{
   line-height: 1.5em;
-}
-
-.type-wrapper{
-  margin-bottom: 1rem;
 }

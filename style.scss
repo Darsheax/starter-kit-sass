@@ -1,19 +1,25 @@
-/*==================/
-  LIBRARY
-/==================*/
-@import "lib/reset";
-
-@import "lib/breakpoint";
-@import "lib/spacement";
-@import "lib/type";
-@import "lib/containers";
-@import "lib/accessibility";
+@import "components/reset";
 
 /*==================/
   SETTINGS
 /==================*/
-@import "settings/colors";
+@import "settings/variables";
 
+/*==================/
+  LIBRARY
+/==================*/
+
+//@import "lib/color";
+@import "lib/accessibility";
+@import "lib/breakpoint";
+@import "lib/spacement";
+
+/*==================/
+  COMPONENT
+/==================*/
+@import "components/list";
+@import "components/type";
+@import "components/containers";
 
 
 .div1, .div2{

@@ -1,0 +1,33 @@
+/*==================/
+  COLORS
+/==================*/
+
+$color-primary: white;
+$color-secondary: white;
+$color-terciary: white;
+
+$font-color: white;
+$font-color-discreet: white;
+$font-color-colored: white;
+
+$font-color-contrasted: white;
+$font-color-contrasted-discreet: white;
+
+$input-font-color: white;
+$input-placeholder-color: white;
+
+$selector-color: white;
+$selector-bgcolor: #ff8686;
+
+/*==================/
+  BOX
+/==================*/
+
+$border-radius: 5px;
+
+
+
+::selection{
+  background-color: $selector-bgcolor;
+  color: $selector-color;
+}

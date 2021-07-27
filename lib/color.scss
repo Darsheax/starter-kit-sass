@@ -1,0 +1,6 @@
+@function pastel($r, $g, $b) {
+  $r: ($r + 255) / 2;
+  $g: ($g + 255) / 2;
+  $b: ($b + 255) / 2;
+  @return rgb($r, $g, $b);
+}

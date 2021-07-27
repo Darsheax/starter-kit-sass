@@ -2,8 +2,6 @@
 }
 
 .section{
-  background-color: rgb(0,0,0,.1);
-  @include center-h;
   padding-left: calc( ( 100vw - #{$desktop}) / 2 ) ;
   padding-right: calc( ( 100vw - #{$desktop}) / 2 ) ;
 }
